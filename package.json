@@ -10,7 +10,7 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
     "expo": "^33.0.0",
-    "expo-font": "^6.0.0",
+    "expo-font": "5.0.1",
     "lodash.values": "^4.3.0",
     "native-base": "^2.13.4",
     "react": "16.8.3",
