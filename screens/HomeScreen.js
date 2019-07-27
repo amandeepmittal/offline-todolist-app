@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, StatusBar } from 'react-native'
 import { AppLoading } from 'expo'
 import * as Font from 'expo-font'
 import FloatingButton from '../components/FloatingButton'
+import Header from '../components/Header'
 
 export class HomeScreen extends Component {
+	static navigationOptions = {
+		header: null
+	}
+
 	state = {
 		isDataReady: false
 	}
@@ -37,6 +42,8 @@ export class HomeScreen extends Component {
 		}
 		return (
 			<View style={styles.container}>
+				<Header />
+				<StatusBar barStyle='light-content' />
 				<Text>Home Screen</Text>
 				<FloatingButton actionOnPress={this.onPressFab} />
 			</View>
